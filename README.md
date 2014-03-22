@@ -1,9 +1,9 @@
 ##Latex Thesis for Fudan University
 该GIT库提供了基本满足**复旦大学**博士（硕士）毕业论文格式要求的Latex模板。
 
-![](https://github.com/Pandoxie/FDU-Thesis-Latex/raw/master/FudanLOGO.eps)
+![](http://www.fudan.edu.cn/images/xiaohui.jpg)
 
-主要包含：**FDUbib.bst**（参考文献风格），**FDUThesis.sty**（正文风格）两部分模板。  
+主要包含：**FDUbib.bst**（参考文献风格），**FDUThesis.sty**（正文风格）两部分文件。  
 **Thesis.tex**给出了上述文件的使用框架，仅供参考。  
 此外，**Book-Cover.tex**还提供了封面的源码，请自行修改直接编译使用。
 
@@ -24,9 +24,9 @@ DEMO文件夹提供了使用该模板的一篇删减版博士论文，仅供不�
 -  鉴于时间限制，在此不能废话过多。Latex的乐趣就在于自己摸索，本模板的最大作用也莫过于抛砖引玉。各位**Enjoy**:coffee:
 
 ***
-注：参考文件风格模板借鉴了thuthesis的基本框架，在此对该模板的制作者致敬！  
+注：参考文件风格模板（**GB-T 7714-2005**）借鉴了**thuthesis**的基本框架，在此对该模板的制作者致敬！  
 **Pandoxie-BiB.bib**提供了参考文献录入示例，原数据为**EndNote**导出。  
-**BibTeX Export-Zh.ens**提供了本人使用的**EndNote**导出风格插件（忘记修改了什么了:grimacing:，仅供参考）。
+**BibTeX Export-Zh.ens**提供了本人使用的**EndNote**导出风格插件（忘记修改了什么捏:grimacing:，仅供参考）。
 
 ## License
 

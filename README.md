@@ -1,8 +1,6 @@
 ##Latex Thesis for Fudan University
 该GIT库提供了基本满足**复旦大学**博士（硕士）毕业论文格式要求的Latex模板。
 
-![](http://www.fudan.edu.cn/images/xiaohui.jpg)
-
 主要包含：**FDUbib.bst**（参考文献风格），**FDUThesis.sty**（正文风格）两部分文件。  
 **Thesis.tex**给出了上述文件的使用框架，仅供参考。  
 此外，**Book-Cover.tex**还提供了封面的源码，请自行修改直接编译使用。

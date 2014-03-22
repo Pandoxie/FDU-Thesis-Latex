@@ -1,0 +1,54 @@
+% !TEX encoding = UTF-8 Unicode
+%!TEX TS-program = xelatex
+
+\frontchapter{评审委员会}
+
+\frontchapter{中文摘要}
+纵向耦合振动（POGO）是由于大型液体火箭结构与管路推进系统相互作用而产生的一种不稳定振动。结合国内外大量历史资料，可以看出自上世纪六十年代初美国的雷神/阿金钠运载器和法国的EMERAUDE(VE121)运载器开始，许多大型液体火箭运载器在发射升空过程中都经历了较为严重的纵向耦合振动。
+
+首先，针对传统POGO稳定性分析方法难以进行耦合系统特征值求解这一问题，本文提出了一种基于矩阵法和有理分式拟合法的耦合系统快速特征值求解算法。采用引入辅助变量的技术，该方法能够将结构与管路耦合系统的控制方程等效的变换为与结构动力学方程一致的形式，因此可以通过快速求解矩阵特征值来确定耦合系统的动力学特性，进而判断系统的稳定性。经过将此方法的计算结果与液体火箭遥测数据进行对比，可知该方法具有良好的求解精度和计算效率。
+
+接下来，鉴于以往的液体火箭结构系统模型通常没有考虑带液贮箱的弹性变形，加之由此推导得出的管路系统入口端脉动压力与流量边界条件过于简化，文章又引入了一套液体火箭带液贮箱的三维轴对称建模方法。发展后的三维带液贮箱模型不仅能够提供足够完整且合理的结构系统模态参与耦合计算，并且为管路系统提供了更为科学和精确的入口端边界条件。结合MSC.Nastran提供的传递函数TF卡建模工具，本文另外给出了一种能够使得有理分式形式的反馈力传递函数参与结构系统耦合计算的商业软件整合技术，基本实现了耦合系统时变复特征值计算的模块化与自动化。
+
+此外，考虑到液体火箭结构系统阻尼特性对于耦合系统特征值计算的重要影响，文章还着重指出了适用于液体火箭POGO仿真的阻尼建模方式及施加方法。通过调整贮箱干/湿面材料随时间变化的比例阻尼系数，成功的利用有限元模型模拟了实测贮箱阻尼结果。
+
+最后，通过比较不同类型的液体火箭在多种工况下的POGO稳定性分析结果，本文一方面揭示了耦合系统特征值与管路系统关键参数（如蓄压器容积等）之间的相互联系，另一方面还指出了将耦合系统动态传递特性分析纳入液体火箭POGO稳定性分析的重要性和必要性。参考现阶段国内液体火箭的设计水平与制造工艺，提出了一些分析及防治液体火箭POGO振动的基本思路，给出了液体火箭纵向耦合振动的理论分析框架和试验设计框架。
+
+\bigskip
+\noindent \textbf{关键词：\hspace{\Han}}
+纵向耦合振动；\;
+液体推进剂火箭；\;
+有理分式逼近；\;
+快速特征值求解；\;
+带液贮箱有限元建模；\;
+传递特性分析；\;
+参数优化
+
+\bigskip
+\noindent \textbf{中图分类号：\hspace{\Han}V475.1}
+
+\frontchapter{Abstract}
+The coupled longitudinal oscillation of liquid rocket(POGO) belongs to a type of instability due to interaction of its structural and propulsion system. In view of the historical documentation both domestic and abroad, severe POGO oscillation had been observed during launches of America's Thor/Agena and French's Emeraude(VE121) dating back to the 1960s. Since then, a large proportion of liquid-propellant rockets underwent this instability during blastoff.
+
+To begin with, considering the complexity of eigenvalue extraction of traditional POGO analysis methods, a Fast Matrix Algorithm based on the commonly used Matrix Method and Rational Function Fitting, is presented for POGO instability prediction in this dissertation. With the aid of auxiliary variables, the governing transfer function of the coupled structure-propulsion system can be firstly converted into the form of typical structural dynamic equation. Therefore, eigenvalues of the coupled system can be obtained much faster without losing accuracy by mature eigensolvers, and relevant dynamical properties of the rocket can be determined conveniently in the end. By comparison of the computational results and telemetry data, this new method proved to be highly efficient and accurate.
+
+
+Secondly, on account of the facts that the flexibility of liquid rocket propellant tank is frequently omitted and the description of relationship between oscillatory pressure and outflow near tank outlet is generally oversimplified in nearly all the earlier studies, a 3D modeling technique is developed to provide a more accurate tank simulation. As it is demonstrated by later examples, this new liquid rocket tank not only can provide more valuable vibration modes for the coupled system stability analysis, it also gives a far better boundary condition for the propulsion system naturally. By means of the TF input method in MSC.Natran, an integration technique is further presented to combine the rational form of feedback forces into the FEM computation of rocket structural system. As a result, the aforementioned Fast Matrix Algorithm can be realized by the commercial software automatically.
+
+In addition, a modeling and applying method for the damping phenomena of liquid rocket structural system is offered herein, in light of its remarkable influence over eigenvalue computation of coupled system. By adjusting the tank shell's proportional damping coefficient according to whether the element is wetted or not, this method successfully reproduced the tank experiments numerically.
+
+At last, the state of art POGO stability analysis method is applied to various types of liquid rockets under multiple launch conditions. By comparing typical results, the relationship of eigenvalue and key feedline parameters(like accumulator compliance) is revealed, and the necessity and importance of including frequency response analysis into POGO stability research is highlighted. Considering the current status of domestic liquid rocket manufacturing and design, some basic principles of POGO instability analysis are contributed in the end, as also the framework of theoretical and experimental study of POGO problem.
+
+\bigskip
+\noindent \textbf{Key Words:\hspace{\Han}}
+Coupled Longitudinal Oscillation;\;
+Liquid Propellant Rocket;\;
+Rational Function Fitting;\;
+Fast Matrix Algorithm;\;
+Liquid Tank Modeling;\;
+Frequency Response Analysis;\;
+Parameter Optimization
+
+\bigskip
+\noindent \textbf{CLC Number:\hspace{\Han}V475.1}
+

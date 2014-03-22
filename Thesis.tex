@@ -1,0 +1,70 @@
+% !TEX encoding = UTF-8 Unicode
+% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+
+\documentclass[a4paper, 12pt]{book}
+%Load FDU Style
+\usepackage{FDUThesis}
+\title{Pandoxie's Article}
+\author{Xu Deyuan $<$\href{mailto:xudeyuanghw@gmail.com}%
+            {xudeyuanghw@gmail.com}$>$}
+            
+%\date{}                                         % Activate to display a given date or no date
+\RequirePackage{snapshot}
+\begin{document}
+%Use \thispagestyle{} fancy, plain, empty to redefine Per/Page Header
+
+\includepdf{Book-Cover.pdf}
+\thispagestyle{empty}
+%----------------------------Front Matter-------------------------------!
+\frontmatter
+%\maketitle
+
+\tableofcontents
+\addcontentsline{toc}{chapter}{\contentsname}
+
+%{\pagestyle{plain}
+%\tableofcontents
+%\cleardoublepage}
+
+\include{Forewords}
+
+\listoffigures
+%\listoftables
+
+%----------------------------Main Matter-------------------------------!
+\mainmatter
+
+\include{Intro}
+
+\include{Chapter01}
+
+\include{Chapter02}
+
+%\include{Chapter03}
+
+\include{Chapter04}
+%----------------------------Appendix-------------------------------!
+\appendix 
+
+\renewcommand{\thechapter}{附录{\Alph{chapter}}}
+
+%\chapter{公式推导}
+
+%----------------------------Back Matter-------------------------------!
+\backmatter
+
+\bibliographystyle{FDUbib}
+\bibliography{Pandoxie-BiB}
+\addcontentsline{toc}{chapter}{\bibname}
+%\nocite{*}
+
+\backchapter{致谢}
+
+\printindex
+
+\end{document} 

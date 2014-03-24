@@ -14,7 +14,7 @@
             {xudeyuanghw@gmail.com}$>$}
             
 %\date{}                                         % Activate to display a given date or no date
-%\RequirePackage{snapshot}
+
 \begin{document}
 %Use \thispagestyle{} fancy, plain, empty to redefine Per/Page Header
 
@@ -24,8 +24,9 @@
 \frontmatter
 %\maketitle
 
-\tableofcontents
+\phantomsection
 \addcontentsline{toc}{chapter}{\contentsname}
+\tableofcontents
 
 %{\pagestyle{plain}
 %\tableofcontents
@@ -58,13 +59,15 @@
 %----------------------------Back Matter-------------------------------!
 \backmatter
 
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}
 \bibliographystyle{FDUbib}
 \bibliography{Pandoxie-BiB}
-\addcontentsline{toc}{chapter}{\bibname}
 %\nocite{*}
 
 \backchapter{致谢}
 
+\clearpage
 \printindex
 
 \end{document} 

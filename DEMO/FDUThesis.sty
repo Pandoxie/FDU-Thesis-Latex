@@ -8,8 +8,9 @@
 %\layout
 
 %-----------------------------Index, Indent, LineSpace Setup--------------------------!
-\usepackage{makeidx} %Index Enabled
-\makeindex
+\usepackage{imakeidx} %Index Enabled
+\makeindex[columns=2, options=-s Thesis]
+\usepackage[font=footnotesize, totoc]{idxlayout}
 \setlength{\parindent}{2em} %Indent
 \usepackage{setspace}
 \setstretch{1.385}
@@ -18,8 +19,8 @@
 %\setlength{\baselineskip}{20bp} %baseline skip. No effect in Preamble, insert after begin{document}
 %\linespread{1.3844827586206896}
 
-\newcommand{\frontchapter}[1]{\chapter*{#1} \addcontentsline{toc}{chapter}{#1} \markboth{\sffamily {#1}}{}}
-\newcommand{\backchapter}[1]{\chapter*{#1} \addcontentsline{toc}{chapter}{#1} \markboth{\sffamily {#1}}{}}
+\newcommand{\frontchapter}[1]{\cleardoublepage \phantomsection \addcontentsline{toc}{chapter}{#1} \chapter*{#1} \markboth{\sffamily {#1}}{}}
+\newcommand{\backchapter}[1]{\cleardoublepage \phantomsection \addcontentsline{toc}{chapter}{#1} \chapter*{#1} \markboth{\sffamily {#1}}{}}
 
 %-----------------------------------Misc-----------------------------------!
 \usepackage{graphicx}
@@ -136,7 +137,7 @@ pdfauthor={Xu Deyuan}]{hyperref}
 \renewcommand{\cftdotsep}{5}
 \renewcommand{\cftparskip}{0pt} 
 \addtolength{\cftchapnumwidth}{3\Han} % add the extra space
-\setlength{\cftbeforechapskip}{0.62em} % Adjust Chapter Menu Spacing
+\setlength{\cftbeforechapskip}{0.6em} % Adjust Chapter Menu Spacing
 \setlength{\cftbeforesecskip}{\cftbeforechapskip} % Equal Menu Vertical Spacing
 \setlength{\cftbeforesubsecskip}{\cftbeforechapskip} 
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % for chapters
@@ -175,7 +176,7 @@ pdfauthor={Xu Deyuan}]{hyperref}
 \renewcommand{\listfigurename}{\textsf{插图索引}}
 \renewcommand{\listtablename}{表格索引}
 \renewcommand{\bibname}{\textsf{参考文献}}
-\renewcommand{\indexname}{索引}
+\renewcommand{\indexname}{\textsf{索引}}
 \renewcommand{\figurename}{图}
 \renewcommand{\tablename}{表}
 \renewcommand{\appendixname}{附录}

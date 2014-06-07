@@ -41,6 +41,7 @@
 \usepackage{siunitx}
 \usepackage{tabularx}
 \usepackage{booktabs}
+\usepackage{multirow}
 \usepackage{arydshln}
 \usepackage{pdfpages}
 \raggedbottom
@@ -68,7 +69,7 @@ linkcolor=black,%
 citecolor=black,%
 CJKbookmarks=true,%
 unicode=true,%
-pagebackref=true,%
+%pagebackref=true,%
 hyperindex=true,%
 hyperfigures=true,%
 pdfauthor={Xu Deyuan}]{hyperref}
@@ -172,14 +173,14 @@ pdfauthor={Xu Deyuan}]{hyperref}
 
 
 \renewcommand{\chaptername}{}
-\renewcommand{\contentsname}{\textsf{目\hspace{1em}录}}
+\renewcommand{\contentsname}{\textsf{目\hspace{.5em}录}}
 \renewcommand{\listfigurename}{\textsf{插图索引}}
 \renewcommand{\listtablename}{表格索引}
 \renewcommand{\bibname}{\textsf{参考文献}}
-\renewcommand{\indexname}{\textsf{索引}}
+\renewcommand{\indexname}{\textsf{索\hspace{.5em}引}}
 \renewcommand{\figurename}{图}
 \renewcommand{\tablename}{表}
-\renewcommand{\appendixname}{附录}
+\renewcommand{\appendixname}{附\hspace{.5em}录}
 \renewcommand{\thechapter}{第\CJKnumber{\arabic{chapter}}章}
 \renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
 \renewcommand{\thefigure} {\arabic{chapter}-\arabic{figure}}

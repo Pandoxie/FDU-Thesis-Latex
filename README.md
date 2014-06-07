@@ -28,6 +28,9 @@ DEMO文件夹提供了使用该模板的一篇删减版博士论文，仅供不�
 **BibTeX Export-Zh.ens**提供了本人使用的**EndNote**导出风格插件（忘记修改了什么捏:grimacing:，仅供参考）。  
 **Thesis.ist**提供了索引的风格定义，可根据实际需要进行修订。
 
+## Git-Phobic
+-  **FDUThesis**还有自己的[Git Page](http://pandoxie.github.io/FDU-Thesis-Latex/)，提供懒虫直接下载。
+-  欢迎访问Pandoxie的[个人网站](http://www.pandoxie.com)或直接参与Git互动让FDU-Latex更加实用、强大。
 
 ## License
 

@@ -13,7 +13,7 @@
 
 ***
 DEMO文件夹提供了使用该模板的一篇删减版博士论文，仅供不熟悉Latex使用的同学参考。鉴于水平有限，可能不免贻笑大方。
-由于本人论文还:bangbang:**没有**:bangbang:提交教务处审批，各位自重:kissing_heart:
+~~由于本人论文还:bangbang:**没有**:bangbang:提交教务处审批，各位自重:kissing_heart:~~
 
 ## Caveat
 -  **FDUThesis**加载了较多的个性化宏包，请自行根据需要进行删减

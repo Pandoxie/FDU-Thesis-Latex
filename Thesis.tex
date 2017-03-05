@@ -1,18 +1,36 @@
-% !TEX encoding = UTF-8 Unicode
+%!TEX encoding = UTF-8 Unicode
 % XeLaTeX can use any Mac OS X font. See the setromanfont command below.
 % Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
 
 % The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
-
-%!TEX TS-program = xelatex
+%!TEX TS-program = xelatex 
 
 \documentclass[a4paper, 12pt]{book}
 %Load FDU Style
 \usepackage{FDUThesis}
-\title{Pandoxie's Article}
-\author{Xu Deyuan $<$\href{mailto:xudeyuanghw@gmail.com}%
-            {xudeyuanghw@gmail.com}$>$}
-            
+\usepackage{mathrsfs}
+\usepackage{siunitx}
+%\usepackage{wordcount}
+%\usepackage{vector}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{grffile} %Prevent the file path of an image appearing above the image
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{mathtools}  % to input small matrix 
+\usepackage{placeins} % prevent the graph to float to another section \FloatBarrier
+
+\newcommand{\bvec}{\mathbf}
+\graphicspath{{./Pic/},{./Pic/OTS/},{./Pic/PumpRepump/},{./Pic/Parafin/},{./Pic/chapter2/},{./Pic/chapter3/},{./Pic/Intro/}} 
+ 
+\title{Wang Mengbing's Article} 
+\author{Wang Mengbing $<$\href{mailto:menbinwan@gmail.com}%
+            {menbinwan@gmail.com}$>$}
+  
 %\date{}                                         % Activate to display a given date or no date
 
 \begin{document}
@@ -34,40 +52,64 @@
 
 \include{Forewords}
 
-\listoffigures
+%\listoffigures
 %\listoftables
 
 %----------------------------Main Matter-------------------------------!
 \mainmatter
 
-\include{Intro}
 
-\include{Chapter01}
+%\include{Intro}
 
-\include{Chapter02}
+%\include{Chapter01}
 
-\include{Chapter03}
+%\include{Chapter02}
 
-\include{Chapter04}
+%\include{Chapter03}
+
+%\include{Chapter04}
+\input{Chapters/Intro}
+
+\input{Chapters/Chapter1} % Introduction and background theory
+
+\input{Chapters/Chapter2} % Calculation Method and Result
+
+\input{Chapters/Chapter3} % Experiment Data and Analysis
+
+\input{Chapters/publishing}
 %----------------------------Appendix-------------------------------!
-\appendix 
+\appendix  
 
 \renewcommand{\thechapter}{附录{\Alph{chapter}}}
 
 %\chapter{公式推导}
-
 %----------------------------Back Matter-------------------------------!
-\backmatter
+\backmatter{}
 
 \phantomsection
 \addcontentsline{toc}{chapter}{\bibname}
 \bibliographystyle{FDUbib}
-\bibliography{Pandoxie-BiB}
+\bibliography{Bibliography}
 %\nocite{*}
 
 \backchapter{致谢}
 
+
+
+感谢赵凯锋导师指导，特别是最后阶段对论文和答辩报告幻灯片提出的修改意见。感谢王美玲师姐在我刚来实验室时的帮助，特别是在我研一时候组织的激光物理读书会开启了科研的大门。也感谢魏丽花师姐，优美的歌声不会忘记。在和廖康佳师兄对物理问题的讨论中，他独到的见解经常让我有超出预期的收获。感谢张桂迎师兄，他大量的文献阅读量使得在和他的讨论中，能够得知许多工作组目前在做的工作方向和最新进展，推荐文献以供学习研究。并且在生活中也给我许多指导。
+
+感谢我在研究生阶段初期选课期间给我们授课的物理系各位老师，以及在课堂上认识的同学们。老师知识渊博，对于教学有着自己的思路和方式，非常真诚，做出了许多工作让学生尽可能多的理解；有幸认识了一群真正喜欢物理，并愿意做物理的同学们。在观察他们与老师的讨论中和与他们的讨论中，感受到执着和智慧，对待知识精益求精。
+
+这里特别感谢徐建军老师，有幸选修徐老师的几门课，在他的引导下与和同班许多同学的讨论中好好学了两门课，感到自己进步好多，对物理的感觉建立起来。同样需要特别感谢吴赛骏老师，让我看到一流科研工作者的科研精神和风貌，实验室外的交流中学到了课本上不会讲的学习方法和感悟，回答了长期困扰自己的许多问题，让我有醍醐灌顶的感觉。
+
+感谢现代物理研究所的每一位同学，每个同学身上都有闪光点，让我知道自己的不足和努力方向；
+
+如果复旦是形容词，那么一定可以用来形容他们。
+
+感谢现代物理研究所的杨明杰老师、杨柳老师、封娅娅老师、王冕老师及査老师对我毕业办理手续过程中提供的支持和帮助。感谢其他老师让我加快成长的速度，增长了我的阅历和见识。
+
+最后感谢自己的父母，前十八年你们的养育工作已经顺利完成，剩下一棒就交给我自己了。
+
 \clearpage
 \printindex
-
-\end{document} 
+\end{document}

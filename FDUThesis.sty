@@ -1,9 +1,10 @@
 \ProvidesPackage{FDUThesis}
 %----------------------------Page Layout-------------------------------!
 %\usepackage[top=1.75in, bottom=1.75in, left=1.75in, right=1.25in]{geometry} 
-\usepackage[twoside, head=15pt, bindingoffset=1cm, textwidth=.7\paperwidth,ignorefoot]{geometry} 
+\usepackage[top=2cm, bottom=1.5cm, left=2.5cm, right=2.0cm]{geometry} 
+%\usepackage[twoside, head=15pt, bindingoffset=1cm, textwidth=.7\paperwidth,ignorefoot]{geometry} 
 %\usepackage[top=2.54cm, bottom=2.54cm, left=3.18cm, right=3.18cm]{geometry} 
-\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+%\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
 %\usepackage{layout}
 %\layout
 
@@ -72,21 +73,24 @@ unicode=true,%
 %pagebackref=true,%
 hyperindex=true,%
 hyperfigures=true,%
-pdfauthor={Xu Deyuan}]{hyperref}
+pdfauthor={Wang Mengbing}]{hyperref}
 
 %-----------------------------CJK Font Setup--------------------------!
 \usepackage[PunctStyle=kaiming,AutoFakeBold=false,AutoFakeSlant=false,indentfirst,CJKnumber]{xeCJK}
 \xeCJKDeclareSubCJKBlock{PUNC}{"FF1F}
+
 \usepackage{fontspec}
 %\usepackage[slantfont,boldfont]{xeCJK}
 \usepackage{CJKnumb}
-\setCJKmainfont[BoldFont={Songti SC Bold}, PUNC=SimSun] {Songti SC Light}
-\setCJKsansfont[BoldFont={Heiti SC Medium}]{Heiti SC}
-\setCJKmonofont[BoldFont={Hiragino Sans GB W6}]{Hiragino Sans GB W3}
+
+\defaultfontfeatures{Path = fonts/, Mapping=tex-text}
+\setCJKmainfont[BoldFont={Songti-SC-Bold.ttf}, PUNC=SimSun] {Songti-SC-Light.ttf}
+\setCJKsansfont[BoldFont={Heiti-SC-Medium.ttc}]{Heiti-SC-Light.ttc}
+\setCJKmonofont[BoldFont={Hiragino Sans GB W6.otf}]{Hiragino Sans GB W3.otf}
 
 \setCJKfamilyfont{zhxinsong}{SimSun}
-\setCJKfamilyfont{zhsong}[BoldFont={Songti SC Bold}]{Songti SC Light}
-\setCJKfamilyfont{zhhei}[BoldFont={Heiti SC Medium}]{Heiti SC}
+\setCJKfamilyfont{zhsong}[BoldFont={Songti SC Bold}]{AdobeSongStd-Light.otf} % modified
+\setCJKfamilyfont{zhhei}[BoldFont={Heiti SC Medium}]{Heiti-SC-Light.ttc}
 \setCJKfamilyfont{zhfs}{FangSong}
 \setCJKfamilyfont{zhkai}[BoldFont={Kaiti SC Bold}]{Kaiti SC Regular}
 \setCJKfamilyfont{zhli}{LiSu}
@@ -120,13 +124,15 @@ pdfauthor={Xu Deyuan}]{hyperref}
 
 %-----------------------------English Font Setup--------------------------!
 \usepackage{fontspec,xltxtra,xunicode}
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont{Times New Roman}
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Helvetica}
-\setmonofont[Scale=MatchLowercase]{Courier New}
+\defaultfontfeatures{Path = fonts/,Mapping=tex-text}
+\setmainfont{Times New Roman.ttf}
+\setsansfont[Scale=MatchLowercase]{Helvetica.ttf}
+\setmonofont[Scale=MatchLowercase]{Courier New.ttf}
 
-\newfontfamily{\AMT}{American Typewriter}
-\newfontfamily{\Curly}{Baskerville}
+\usepackage{fontspec}
+%\newfontfamily{\AMT}[Path=Fonts/american-typewriter.ttf]{American Typewriter}
+\newfontfamily{\AMT}{American Typewriter Medium BT.ttf}
+\newfontfamily{\Curly}{Baskerville.ttf}
 \newfontfamily{\Fraktur}{Euclid Fraktur}
 
 

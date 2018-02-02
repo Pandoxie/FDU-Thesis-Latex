@@ -1,11 +1,11 @@
-##Latex Thesis for Fudan University
+## Latex Thesis for Fudan University
 该GIT库提供了基本满足**复旦大学**博士（硕士）毕业论文格式要求的Latex模板。
 
 主要包含：**FDUbib.bst**（参考文献风格），**FDUThesis.sty**（正文风格）两部分文件。  
 **Thesis.tex**给出了上述文件的使用框架，仅供参考。  
 此外，**Book-Cover.tex**还提供了封面的源码，请自行修改直接编译使用。
 
-##Usage
+## Usage
 建议首先下载**DEMO**文件夹下内容进行测试：
 -  运行**xelatex**编译器编译**thesis.tex**
 -  运行**Bibtex**编译器生成参考文献索引
@@ -15,6 +15,7 @@
 DEMO文件夹提供了使用该模板的一篇删减版博士论文，仅供不熟悉Latex使用的同学参考。鉴于水平有限，可能不免贻笑大方。
 ~~由于本人论文还:bangbang:**没有**:bangbang:提交教务处审批，各位自重:kissing_heart:~~
 
+注：mac用户需要安装宋体、楷体等字体，可以点[这里](http://ot0uaqt93.bkt.clouddn.com/fonts-for-mac.zip)打包下载
 ## Caveat
 -  **FDUThesis**加载了较多的个性化宏包，请自行根据需要进行删减
 -  由于本人对相对臃肿的**CJK**宏包比较反感，所以仅采用**xecjk**对中文进行基本处理
